@@ -1,12 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Homepage = () => {
     return (
-        <div className="px-8 flex flex-col">
+        <div className="container mx-auto p-10 flex flex-col">
             <div className="Header">Header</div>
 
-            <div className="Top_Section flex-col h-80 py-40 bg-slate-400 -mx-8 ">
+            <div className="Top_Section flex-col h-80 py-40 bg-slate-400">
                 <div className="Search_Bar flex justify-around">
                     <div className="bg-white rounded-full  p-1">
                         <form action="" method="post">
@@ -115,13 +116,13 @@ const Homepage = () => {
                     </div>
                 </div>
                 <div className="Right w-1/2 ">
-                    <div className="relative justify-center rounded-xl border-slate-800 border-1 w-9/12 h-96 border-2">
+                    <div className="relative bg-blue-400 justify-center rounded-xl w-9/12 h-96">
                         Big image
-                        <div className="absolute rounded-xl w-20 h-20 align-middle border-slate-800 border-2">
+                        <div className="absolute bg-blue-400 -right-1/3 inset-y-16 rounded-xl h-2/3 w-2/3 border-white border-4">
                             {" "}
                             Small image
                         </div>
-                        <div className="absolute font-extrabold flex-col  rounded-xl py-2 px-4 border-1 border-slate-400 mb-auto bg-white align">
+                        <div className="absolute bottom-4 left-4 font-extrabold flex-col  rounded-lg py-2 px-4 border-1 border-slate-400 bg-white align">
                             <p className="text-center">25+ Years</p>
                             <p>⭐⭐⭐⭐⭐</p>
                         </div>
@@ -144,7 +145,7 @@ const Homepage = () => {
                     <div className="cards border-2 rounded-xl py-4 px-4 w-1/4 bg-white">
                         <p className="pr-2">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Ducimus, quibusdam. Lorem ipsum dolor sit. 
+                            elit. Ducimus, quibusdam. Lorem ipsum dolor sit.
                         </p>
                         <div className="flex flex-row gap-2 text-sm font-medium items-center mt-2 mb-auto">
                             <div className="h-8 w-8 rounded-full bg-green-400 border-1 border-slate-800 flex-nowrap"></div>
@@ -222,7 +223,44 @@ const Homepage = () => {
                 </div>
             </div>
 
-            <div className="Download_App">Download_App</div>
+            <div className="Download_App flex-row py-10 gap-2">
+                <div className="w-1/2">
+                    <Image
+                        src=""
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                    />
+                </div>
+                <div className="w-1/2 flex-col gap-4">
+                    <h1 className="pb-4 font-semibold text-2xl">
+                        Download SwiftXpress App
+                    </h1>
+                    <h1 className="font-bold text-4xl pb-4 pr-20 mr-20">
+                        Find a Bus Charter Near You with our App
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae atque ea veritatis porro rem odit labore in
+                        deserunt. Inventore quis voluptatum earum.
+                    </p>
+                    <div className="flex-row mt-4">
+                        <Image
+                            className="bg-slate-800"
+                            src=""
+                            width={170}
+                            height={45}
+                            alt="Download on the App Store"
+                        />
+                        <Image
+                            src="/public/Assets/google-play-png-logo-3799"
+                            width={170}
+                            height={45}
+                            alt="Get it on the PlayStore"
+                        />
+                    </div>
+                </div>
+            </div>
 
             <div className="Other">Other</div>
         </div>
