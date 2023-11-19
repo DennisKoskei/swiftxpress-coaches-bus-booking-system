@@ -22,10 +22,10 @@ const SearchResultsPage = () => {
                 </div>
 
                 <div className="flex flex-col w-3/4 px-8 py-4 bg-green-900 rounded-xl">
-                    <div className="w-full p-2 bg-green-300 rounded-xl">
+                    <div className="w-full p-2 bg-red-300 rounded-xl">
                         <h1 className="mt-2 font-bold">Kisumu to Nairobi </h1>
-                        <div className="flex flex-row gap-2">
-                            <div className="image bg-green-400 h-full w-full rounded-xl">
+                        <div className="flex flex-row gap-2 bg-yellow-300">
+                            <div className="image bg-green-400 h-48 w-48 rounded-xl">
                                 {/* <Image src></Image> */}
                                 image of bus
                             </div>
@@ -34,7 +34,7 @@ const SearchResultsPage = () => {
                                     <div className="w-1/4 mb-4">
                                         <h1>From:</h1>
                                         <h3>Nairobi</h3>
-                                        <h1 className="mt-4" >Date:</h1>
+                                        <h1 className="mt-4">Date:</h1>
                                         <h1>01-Sep 2023</h1>
                                     </div>
                                     <div className="w-1/4">
@@ -45,9 +45,9 @@ const SearchResultsPage = () => {
                                     </div>
                                     <div className="w-1/4 font-bold">
                                         <h1>Available Seats</h1>
-                                        <h1 className="text-xl mt-4" >45</h1>
+                                        <h1 className="text-xl mt-4">45</h1>
                                     </div>
-                                    <div className="w-1/4 font-bold">
+                                    <div className="w-1/4 font-bold bg-purple-500">
                                         <h1>Price</h1>
                                         <p className="text-2xl mt-4">4500 /=</p>
                                     </div>
@@ -75,7 +75,7 @@ const SearchResultsPage = () => {
                                     <div className="w-1/4 mb-4">
                                         <h1>From:</h1>
                                         <h3>Nairobi</h3>
-                                        <h1 className="mt-4" >Date:</h1>
+                                        <h1 className="mt-4">Date:</h1>
                                         <h1>01-Sep 2023</h1>
                                     </div>
                                     <div className="w-1/4">
