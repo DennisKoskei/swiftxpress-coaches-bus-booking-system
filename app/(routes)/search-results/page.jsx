@@ -3,8 +3,6 @@ import React from "react";
 const SearchResultsPage = () => {
     return (
         <div>
-            <div className="header">header</div>
-
             <div className="container flex my-20 flex-row justify-between gap-4 p-2 bg-green-400 mx-auto rounded-xl ">
                 <div className="w-1/4 p-4 bg-green-900 rounded-xl">
                     <h1 className="text-center font-semibold text-l">
