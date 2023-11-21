@@ -4,12 +4,10 @@ import React from "react";
 
 const Homepage = () => {
     return (
-        <div className="container mx-auto p-10 flex flex-col">
-            <div className="Header">Header</div>
-
-            <div className="Top_Section flex-col h-80 py-40 bg-slate-400">
-                <div className="Search_Bar flex justify-around">
-                    <div className="bg-white rounded-full  p-1">
+        <div className="px-10 flex flex-col">
+            <div className="flex-col h-80 py-40 bg-green-300">
+                <div className="flex justify-around">
+                    <div className="bg-white rounded-full p-1">
                         <form action="" method="post">
                             <input
                                 type="text"
